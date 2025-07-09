@@ -1,124 +1,103 @@
 # 📰 Fake News Detection using Machine Learning
 
-A Streamlit web app that predicts if a news article is Real or Fake using Natural Language Processing (NLP) and Machine Learning.
+A Streamlit web app that predicts whether a news article is Real or Fake using Natural Language Processing (NLP) and Machine Learning .
 
-✅Overview
+# 🚀 **Overview**
 
-   Model: Logistic Regression
+- **Model:** Logistic Regression
+- **Vectorization:** TF-IDF
+- **Accuracy Achieved:** ~98%
+- **Platform:** Streamlit Cloud
 
-   Vectorization: TF-IDF
+# 🌐 **Live Demo**
 
-   Accuracy: ~98%
+**URL**: real-fake.streamlit.app
 
-   Interface: Interactive Streamlit web app
+# 📦 **Dataset**
 
-It helps identify potentially fake news by analyzing text content with NLP techniques.
+**Source: Fake and Real News Dataset (Kaggle)**
 
-🚀 Live Demo
+**Files Included:**
 
-  🌐 Check it out here:
+- **Fake.csv** — Fake news articles
 
-   👉 https://real-fake.streamlit.app/
+- **True.csv** — Real news articles
 
-⚙️ Features
+# **🧠 How It Works**
 
-  ✅ Predict whether a news article is Real or Fake
+- **Step 1**: Combine Fake.csv and True.csv with labels (0 = Fake, 1 = Real)
 
+- **Step 2**: Preprocess text using TF-IDF Vectorizer
 
-  ✅ NLP preprocessing with TF-IDF Vectorizer
+- **Step 3**: Train Logistic Regression classifier
 
+- **Step 4**: Evaluate model accuracy (~98%)
 
-  ✅ Trained Logistic Regression model
+- **Step 5**: Save the model and vectorizer as .pkl files
 
+- **Step 6**: Use Streamlit app to predict if news is REAL or FAKE
 
-  ✅ Clean, responsive Streamlit UI
-
-
-  ✅ ~98% training accuracy
-
-
-  ✅ Easy deployment on Streamlit Cloud
-
-📦 Project Structure
-
+# **💻 Project Structure**
 
 Fake-Real-News/
-├── app.py                    ← Streamlit web app
+├── app.py                    ← Streamlit app
 ├── Fake & Real News.ipynb    ← Jupyter notebook for training
 ├── fake_news_model.pkl       ← Saved ML model
 ├── tfidf_vectorizer.pkl      ← Saved TF-IDF vectorizer
 ├── Fake.csv                  ← Fake news dataset
 ├── True.csv                  ← Real news dataset
 ├── requirements.txt          ← Dependencies
-└── README.md                 ← You're here!
+└── README.md                 ← Project documentation
 
-1️⃣ Clone the repository
+# **⚙️ Requirements**
 
-  git clone https://github.com/Manu082/Fake-Real-News.git
-  cd Fake-Real-News
+**Python**: 3.7+
 
-2️⃣ Install dependencies
+**Dependencies**:
 
-  pip install -r requirements.txt
+- **streamlit**
 
-3️⃣ Train the model (Optional)
+- **scikit-learn**
+
+- **pandas**
+
+- **numpy**
+
+- **seaborn**
+
+- **matplotlib**
+
+# **✅ Install all dependencies**
+
+pip install -r requirements.txt
+
+# **🛠️ How to Run Locally**
+
+- **Step 1**: Clone the repository
+  
+   git clone https://github.com/YourUsername/Fake-Real-News.git
+  
+   cd Fake-Real-News
+  
+- **Step 2** :Install dependencies
+  
+   pip install -r requirements.txt
+  
+- **Step 3** :Start the Streamlit app
+  
+   streamlit run app.py
+
+# **📜 License**
+
+ - **License**: MIT License
+
+# **👤 Author**
+
+   **MANAS DIDWANIA**
+
+**[didwania082@gmail.com]**
 
 
-  If you want to retrain:
-
-  Open Fake & Real News.ipynb in Jupyter Notebook.
-
-  Run all cells to generate:
-
-  fake_news_model.pkl
-
-  tfidf_vectorizer.pkl
-
-✔️ Or use the existing provided .pkl files.
-
-4️⃣ Start the Streamlit app
-
-  streamlit run app.py
-
-✅ Open your browser at http://localhost:8501.
-
-✅ Dataset Source
-
-  This project uses the Fake and Real News Dataset from Kaggle.
-
-   Fake.csv: Fake news articles
-
-   True.csv: Real news articles
-
-✅ Requirements
-
-nginx
-Copy
-Edit
-streamlit
-scikit-learn
-pandas
-numpy
-seaborn
-matplotlib
-
-✅ All listed in requirements.txt
-
-📜 License
-
-  This project is licensed under the MIT License.
-
-💡 Author
-
-  👤 MANAS DIDWANIA
-  📧 [didwania082@gmail.com]
-
-⭐️ Notes
-
-  Make sure .pkl files are in the same directory as app.py.
-
-  Keep model files under GitHub’s file size limits (~100MB).
-
-✨ Happy Coding!
-
+# **✅ Happy Coding! 🚀**
+  
 
