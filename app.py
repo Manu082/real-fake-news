@@ -14,7 +14,7 @@ st.set_page_config(
 )
 
 # ✅ App Header
-st.title("📰 Fake News Detection APP Using Machine Learning and Python")
+st.title("📰 Fake News Detection Using Machine Learning and Python")
 
 st.markdown(
     """
