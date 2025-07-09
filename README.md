@@ -75,7 +75,7 @@ pip install -r requirements.txt
 
 - **Step 1**: Clone the repository
   
-   git clone https://github.com/YourUsername/Fake-Real-News.git
+   git clone https://github.com/Manu082/Fake-Real-News.git
   
    cd Fake-Real-News
   
